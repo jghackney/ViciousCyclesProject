@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="images/viciousCyclesLogo.png" alt="logo" id="logo">
+		  <h1>Vicious Cycles</h1>
+		  <nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="mountain.html">Mountain Bikes</a></li>
+			  <li><a href="city.html">City Bikes</a></li>
+			  <li><a href="service.html">Bike Service</a></li>
+			  <li><a href="ourPhilosophy.html">Our Philosophy</a></li>
+			  <li> <a href="ourCustomers.html">Our Customers</a></li>
+			  <li><a href="form.html">Contact Us</a></li>
+			</ul>
+		  </nav>
+		</div>
+	  </header>
+
+	<main>
+		<div class="container">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+                <br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required><br>
+
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="3" required></textarea>
+                <br>
+
+				<label>What type of bike are you interested in?</label>
+				<ul>
+					<li><input type="checkbox" name="type" id="mountain" value="mountain"><label for="mountain">Mountain Bike</label></li>
+					<li><input type="checkbox" name="type" id="city" value="city"><label for="city">City Bike</label></li>
+					<li><input type="checkbox" name="type" id="electric" value="electric"><label for="electric">Electric Bike</label></li>
+				</ul>
+
+				<label>What is your budget range?</label>
+				<ul>
+					<li><input type="radio" name="budget" id="budget1" value="1000-2000"><label for="budget1">$1000-$2000</label></li>
+					<li><input type="radio" name="budget" id="budget2" value="2000-4000"><label for="budget2">$2000-$4000</label></li>
+				</ul>
+
+				<label for="service">Do you need bike servicing?</label>
+				<select id="service" name="service">
+					<option value="yes">Yes</option>
+					<option value="no" selected>No</option>
+				</select>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+		  <p>Contact Us
+			Vicious Cycles
+			123 Main St.
+			Holly Springs, NC 27540
+			Phone: (919) 555-4567 Fax: (919) 555-9875
+			We are also on Twitter and Facebook.</p>
+		  <p>&copy; 2023 Vicious Cycles. All rights reserved.</p>
+		</div>
+	  </footer>
+</body>
+</html>
